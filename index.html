@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula</title>
+</head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<style>
+    .int table{
+        text-align: center;
+        width: 100%;
+    }
+    .int table td{
+        width: 50%;
+    }
+    .diff table{
+        width: 100%;
+        text-align: center;
+    }
+    .diff table td{
+        width: 50%;
+    }
+</style>
+<body>
+    <div class="canvas">
+        <div class="diff">
+            <table border="1">
+                <tr><th colspan="2">Differentiation</th></tr>
+                <tr><th>Function</th><th>Derivative</th></tr>
+                <tr><td>$$f(x)=c$$</td><td>$$f'(x)=0$$</td></tr>
+                <tr><td>$$f(x)=x^n$$</td><td>$$f'(x)=nx^{n-1}$$</td></tr>
+                <tr><td>$$f(x)={1\over x^n}$$</td><td>$$f'(x)=-{n\over x^{n+1}}$$</td></tr>
+                <tr><td>$$f(x)=\sqrt x$$</td><td>$$f'(x)={1\over 2\sqrt x}$$</td></tr>
+                <tr><td>$$f(x)=log\ x$$</td><td>$$f'(x)=1\over x$$</td></tr>
+                <tr><td>$$f(x)=e^x$$</td><td>$$f'(x)=e^x$$</td></tr>
+                <tr><td>$$f(x)=a^x$$</td><td>$$f'(x)=a^x\ log\ a$$</td></tr>
+                <tr><td>$$f(x)=sin\ x$$</td><td>$$f'(x)=cos\ x$$</td></tr>
+                <tr><td>$$f(x)=cos\ x$$</td><td>$$f'(x)=-sin\ x$$</td></tr>
+                <tr><td>$$f(x)=tan\ x$$</td><td>$$f'(x)=sec^2\ x$$</td></tr>
+                <tr><td>$$f(x)=cot\ x$$</td><td>$$f'(x)=-cosec^2\ x$$</td></tr>
+                <tr><td>$$f(x)=sec\ x$$</td><td>$$f'(x)=sec\ x.tan\ x$$</td></tr>
+                <tr><td>$$f(x)=cosec\ x$$</td><td>$$f'(x)=-cosec\ x.cot\ x$$</td></tr>
+                <tr><td>$$f(x)={1\over x}$$</td><td>$$f'(x)=-{1\over x^2}$$</td></tr>
+                <tr><td>$$f(x)=log_a\ x$$</td><td>$$f'(x)={1\over x\ log\ a}$$</td></tr>
+                <tr><td>$$f(x)=sin^{-1}\ x$$</td><td>$$f'(x)={1\over \sqrt {1-x^2}}$$</td></tr>
+                <tr><td>$$f(x)=cos^{-1}\ x$$</td><td>$$f'(x)=-{1\over \sqrt {1-x^2}}$$</td></tr>
+                <tr><td>$$f(x)=tan^{-1}$$</td><td>$$f'(x)={1\over 1+x^2}$$</td></tr>
+                <tr><td>$$f(x)=cot^{-1}$$</td><td>$$f'(x)=-{1\over 1+x^2}$$</td></tr>
+                <tr><td>$$f(x)=sec^{-1}$$</td><td>$$f'(x)=\pm {1\over x\sqrt{x^2-1}}$$</td></tr>
+                <tr><td>$$f(x)=cosec^{-1}$$</td><td>$$f'(x)=\pm {1\over x\sqrt{x^2-1}}$$</td></tr>
+            </table>
+        </div>
+        <div class="int">
+            <table border="1">
+                <tr><th colspan="2">Integration</th></tr>
+                <tr><th>Integral</th><th>Function</th></tr>
+                <tr><td>$$\int k.dx$$</td><td>$$kx+C$$</td></tr>
+                <tr><td>$$\int x^n.dx$$</td><td>$${x^{n+1}\over n+1}+C$$</td></tr>
+                <tr><td>$$\int (ax+b)^n.dx$$</td><td>$${(ax+b)^{n+1}\over n+1}.{1\over a}+C$$</td></tr>
+                <tr><td>$$\int a^x.dx$$</td><td>$${a^x\over log\ a}+C$$</td></tr>
+                <tr><td>$$\int e^x.dx$$</td><td>$$e^x+C$$</td></tr>
+                <tr><td>$$\int {1\over \sqrt x}.dx$$</td><td>$$2\sqrt x+C$$</td></tr>
+                <tr><td>$$\int cos\ x.dx$$</td><td>$$sin\ x+C$$</td></tr>
+                <tr><td>$$\int sin\ x.dx$$</td><td>$$-cos\ x+C$$</td></tr>
+                <tr><td>$$\int sec^2\ x.dx$$</td><td>$$tan\ x+C$$</td></tr>
+                <tr><td>$$\int sec\ x.tan\ x.dx$$</td><td>$$sec\ x+C$$</td></tr>
+                <tr><td>$$\int cosec\ x.cot\ x.dx$$</td><td>$$-cosec\ x+C$$</td></tr>
+                <tr><td>$$\int cosec^2\ x.dx$$</td><td>$$-cot\ x+C$$</td></tr>
+                <tr><td>$$\int {1\over x}.dx$$</td><td>$$log\ x+C$$</td></tr>
+                <tr><td>$$\int tan\ x.dx$$</td><td>$$log(sec\ x)+C$$</td></tr>
+                <tr><td>$$\int cot\ x.dx$$</td><td>$$log(sin\ x)+C$$</td></tr>
+                <tr><td>$$\int sec\ x.dx$$</td><td>$$log(sec\ x+tan\ x)+C$$</td></tr>
+                <tr><td>$$\int cosec\ x.dx$$</td><td>$$log(cosec\ x-cot\ x)+C$$</td></tr>
+                <tr><td>$$\int {1\over x^2+a^2}.dx$$</td><td>$${1\over a}.tan^{-1}({x\over a})+C$$</td></tr>
+                <tr><td>$$\int {1\over x^2-a^2}.dx$$</td><td>$${1\over 2a}.log({x-a\over x+a})+C$$</td></tr>
+                <tr><td>$$\int {1\over a^2-x^2}.dx$$</td><td>$${1\over 2a}.log({a+x\over a-x})+C$$</td></tr>
+                <tr><td>$$\int {1\over \sqrt{a^2-x^2}}.dx$$</td><td>$$sin^{-1}({x\over a})+C$$</td></tr>
+                <tr><td>$$\int {1\over \sqrt{a^2-x^2}}.dx$$</td><td>$$log(x+\sqrt{a^2-x^2})+C$$</td></tr>
+                <tr><td>$$\int {1\over \sqrt{x^2-a^2}}.dx$$</td><td>$$log(x+\sqrt{x^2-a^2})+C$$</td></tr>
+                <tr><td>$$\int {1\over x\sqrt{x^2-a^2}}.dx$$</td><td>$${1\over a}.sec^{-1}({x\over a})+C$$</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
